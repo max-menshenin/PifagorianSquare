@@ -18,7 +18,7 @@ birth_year = 1991
 
 first_base_number = sum_of_digits(birth_year) + sum_of_digits(birth_month) + sum_of_digits(birth_day)
 second_base_number = sum_of_digits(first_base_number)
-third_base_number = first_base_number - 2 * first_number(birth_year)
+third_base_number = first_base_number - 2 * first_number(birth_day)
 
 print(first_base_number)
-print(sum_of_digits(first_base_number))
+print(third_base_number)
