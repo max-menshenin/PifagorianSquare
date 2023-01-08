@@ -12,7 +12,7 @@ def first_number(num):
     return int(num)
 
 
-def digit_count_occurrence(n, d):
+def get_digit_count_occurrence(n, d):
     count = 0
     while n > 0:
         if n % 10 == d:
@@ -23,7 +23,7 @@ def digit_count_occurrence(n, d):
 
 birth_day = 24
 birth_month = 9
-birth_year = 1991
+birth_year = 1999
 
 first_base_number = sum_of_digits(birth_year) + sum_of_digits(birth_month) + sum_of_digits(birth_day)
 second_base_number = sum_of_digits(first_base_number)
@@ -34,7 +34,7 @@ print(first_base_number)
 print(second_base_number)
 print(third_base_number)
 print(fourth_base_number)
-print(digit_count_occurrence(birth_year, 9))
 
-
-
+result_square_string = str(birth_day) + str(birth_month) + str(birth_year) + str(first_base_number)\
+                       + str(second_base_number) + str(third_base_number) + str(fourth_base_number)
+print(result_square_string, get_digit_count_occurrence(int(result_square_string), 4))
