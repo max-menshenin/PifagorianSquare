@@ -22,8 +22,8 @@ def get_digit_count_occurrence(n, d):
 
 
 birth_day = 24
-birth_month = 9
-birth_year = 1999
+birth_month = 3
+birth_year = 1991
 
 first_base_number = sum_of_digits(birth_year) + sum_of_digits(birth_month) + sum_of_digits(birth_day)
 second_base_number = sum_of_digits(first_base_number)
