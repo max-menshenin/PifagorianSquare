@@ -12,13 +12,11 @@ def first_number(num):
     return int(num)
 
 
-def digit_count_occurance(n, d):
+def digit_count_occurrence(n, d):
     count = 0
-    # Loop to find the digits of N
-    while (n > 0):
-        # check if the digit is D
+    while n > 0:
         if n % 10 == d:
-            count = count + 1
+            count += 1
         n = n // 10
     return count
 
@@ -36,7 +34,7 @@ print(first_base_number)
 print(second_base_number)
 print(third_base_number)
 print(fourth_base_number)
-print(digit_count_occurance(birth_year, 9))
+print(digit_count_occurrence(birth_year, 9))
 
 
 
