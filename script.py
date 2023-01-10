@@ -35,6 +35,15 @@ print(second_base_number)
 print(third_base_number)
 print(fourth_base_number)
 
+print("Day: ", birth_day)
+print("Month: ", birth_month)
+print("Year: ", birth_year)
+
+result_square_string = str(birth_day) + str(birth_month) + str(birth_year) + str(first_base_number)\
+                       + str(second_base_number) + str(third_base_number) + str(fourth_base_number)
+
+print(result_square_string, get_digit_count_occurrence(int(result_square_string), 4))
+
 result_square_string = str(birth_day) + str(birth_month) + str(birth_year) + str(first_base_number)\
                        + str(second_base_number) + str(third_base_number) + str(fourth_base_number)
 print(result_square_string, get_digit_count_occurrence(int(result_square_string), 4))
